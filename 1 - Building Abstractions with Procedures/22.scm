@@ -56,7 +56,7 @@
     >
     > DONE
 
-   - Median: 1022.3333333333334
+   - Mean: 1022.3333333333334
   
   (search-for-primes 10000)
    - Output:
@@ -84,7 +84,7 @@
     >
     > DONE
 
-   - Median: 2890.6666666666665
+   - Mean: 2890.6666666666665
   
   (search-for-primes 100000)
    - Output:
@@ -115,7 +115,7 @@
     >
     > DONE
 
-   - Median: 8803.666666666666
+   - Mean: 8803.666666666666
   
   (search-for-primes 1000000)
    - Output:
@@ -143,7 +143,7 @@
     >
     > DONE
 
-   - Median: 27516.333333333332
+   - Mean: 27516.333333333332
 
    Yes! The time taken to compute the three smallest primes larger than 10,000
     is around sqrt(10) the time taken to compute the three smallest primes 

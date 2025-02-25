@@ -1,10 +1,3 @@
-(define (double x) (+ x x))
-
-(define (halve x)
-  (if (even? x)
-      (/ x 2)
-      (error x "is not a even integer")))
-
 (define (fast-mul-iter a b)
   (define (iter a b acc)
     (cond ((= b 0) acc)
