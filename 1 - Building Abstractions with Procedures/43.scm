@@ -2,6 +2,8 @@
   (lambda (x) (f (g x))))
 
 (define (repeated f n)
-  (if (= n 1)
-      f
-      (compose f (repeated f (1- n))))
+  (define (iter count acc)
+    (if (= count n)
+	acc
+	(iter (1+ count) (compose f acc))))
+  (iter 1 f))
