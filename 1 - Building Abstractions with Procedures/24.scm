@@ -1,4 +1,6 @@
-(define (square x) (* x x))
+(define-module (chapter-1 exercise-24)
+  #:use-module (chapter-1 exercise-22)
+  #:export     ((fast-prime? . prime?) expmod fermat-test))
 
 (define (expmod base exp m)
   (cond ((= exp 0) 1)
@@ -21,8 +23,6 @@
 	((fermat-test n) (fast-prime? n (- times 1)))
 	(else #f)))
 
-(define (runtime) (get-internal-real-time))
-
 (define (timed-prime-test n)
   (newline)
   (display n)
@@ -32,20 +32,6 @@
   (if (fast-prime? n 1)
       (report-prime (- (runtime) start-time))
       #f)) ;; slightly modified version, so there's no need to verify 2 times
-
-(define (report-prime elapsed-time)
-  (display " *** ")
-  (display elapsed-time)
-  (newline))
-
-(define (search-for-primes n)
-  (define (search-internal n count)
-    (cond ((= count 3) (newline) (display "DONE\n") (newline))
-	  ((timed-prime-test n) (search-internal (+ 2 n) (+ 1 count)))
-	  (else (search-internal (+ 2 n) count))))
-  (if (odd? n)
-      (search-internal n      0)
-      (search-internal (1+ n) 0)))
 
 #|
   (timed-prime-test 1009)

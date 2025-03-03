@@ -1,3 +1,5 @@
+(define-module (chapter-1 exercise-04))
+
 #|
    The function uses an if expression to choose either the addition
   if b is positive, or the subtraction operator (-) if b is negative.

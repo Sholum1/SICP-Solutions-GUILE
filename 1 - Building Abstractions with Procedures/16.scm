@@ -1,3 +1,6 @@
+(define-module (chapter-1 exercise-16)
+  #:export ((iter-fast-expt . fast-expt)))
+
 (define (iter-fast-expt b n)
   (define (iter b n acc)
     (cond ((= n 0) acc)

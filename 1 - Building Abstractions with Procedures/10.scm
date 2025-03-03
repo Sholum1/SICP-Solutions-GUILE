@@ -1,3 +1,5 @@
+(define-module (chapter-1 exercise-10))
+
 #|
   (A 1 10) -> 1024
 

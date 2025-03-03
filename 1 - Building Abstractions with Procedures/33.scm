@@ -1,3 +1,5 @@
+(define-module (chapter-1 exercise-33))
+
 (define (filtered-accumulate combiner null-value term a next b pred?)
   (define (iter a result)
     (cond ((> a b) result)

@@ -1,3 +1,5 @@
+(define-module (chapter-1 exercise-26))
+
 #|
   Louis Reasoner's implementation of expmod transforms an efficient linear
    recursion into an inefficient tree recursion. The issue arises in the even

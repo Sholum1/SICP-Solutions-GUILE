@@ -1,3 +1,4 @@
+(define-module (chapter-1 exercise-13))
 #|
    We know that.
     * fib(n) = fib(n - 1) + fib(n - 2)

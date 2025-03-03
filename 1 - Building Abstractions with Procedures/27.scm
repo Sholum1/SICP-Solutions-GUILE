@@ -1,15 +1,6 @@
-(define (square x) (* x x))
-
-(define (expmod base exp m)
-  (cond ((= exp 0) 1)
-	((even? exp)
-	 (remainder
-	  (square (expmod base (/ exp 2) m))
-	  m))
-	(else
-	 (remainder
-	  (* base (expmod base (- exp 1) m))
-	  m))))
+(define-module (chapter-1 exercise-27)
+  #:use-module ((chapter-1 exercise-24)
+		#:select (prime? expmod)))
 
 (define (fermat-test n)
   (define (try-it a)

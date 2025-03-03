@@ -1,3 +1,5 @@
+(define-module (chapter-1 exercise-05))
+
 #|
     In applicative-order the program hangs, because it will try to evaluate
    the infinite recursion p.

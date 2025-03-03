@@ -1,3 +1,5 @@
+(define-module (chapter-1 exercise-06))
+
 #|
    The program will never terminate, because the new-if will always evaluate
   the arguments (predicate then-clause and else-clause).

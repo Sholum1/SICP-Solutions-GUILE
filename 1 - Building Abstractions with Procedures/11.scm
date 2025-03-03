@@ -1,3 +1,5 @@
+(define-module (chapter-1 exercise-11))
+
 ;; Recursive version
 (define (f-recur n)
   (if (< n 3)

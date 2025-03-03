@@ -1,9 +1,5 @@
-(define (cont-frac n d k)
-  (define (iter i acc)
-    (if (= i 0)
-	acc
-	(iter (1- i) (/ (n i) (+ (d i) acc)))))
-  (iter (1- k) (/ (n k) (d k))))
+(define-module (chapter-1 exercise-38)
+  #:use-module (chapter-1 exercise-37))
 
 (define (e k)
   (+

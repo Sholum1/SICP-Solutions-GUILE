@@ -1,3 +1,5 @@
+(define-module (chapter-1 exercise-31))
+
 (define (product-recur term a next b)
   (if (> a b)
       1

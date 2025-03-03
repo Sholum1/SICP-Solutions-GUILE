@@ -1,3 +1,5 @@
+(define-module (chapter-1 exercise-20))
+
 #|
   Mormal-order evaluation:
 

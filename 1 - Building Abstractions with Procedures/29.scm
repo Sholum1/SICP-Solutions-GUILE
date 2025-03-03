@@ -1,3 +1,5 @@
+(define-module (chapter-1 exercise-29))
+
 (define (simpsons-rule f a b n)
   (define h (/ (- b a) n))
   (define (iter sum k)

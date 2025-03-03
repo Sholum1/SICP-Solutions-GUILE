@@ -1,3 +1,6 @@
+(define-module (chapter-1 exercise-35)
+  #:export (fixed-point))
+
 #|
   Lets make x = 1 + 1/x, so x² = x + 1, or better, x² - x - 1 = 0,
    implying that x = (1 + sqrt(5)) / 2 or x = (1 - sqrt(5)) / 2, so

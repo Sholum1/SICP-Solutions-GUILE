@@ -1,3 +1,5 @@
+(define-module (chapter-1 exercise-46))
+
 (define (iterative-improve good-enough? improve)
 "  Procedure: iterative-improve [good-enough? improve]
    - good-enough takes 2 parameters, where the second

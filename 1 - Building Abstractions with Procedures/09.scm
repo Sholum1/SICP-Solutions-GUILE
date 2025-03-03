@@ -1,3 +1,5 @@
+(define-module (chapter-1 exercise-09))
+
 (define (+ a b)
   (if (= a 0) b (inc (+ (dec a) b))))
 

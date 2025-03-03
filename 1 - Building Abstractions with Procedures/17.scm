@@ -1,3 +1,5 @@
+(define-module (chapter-1 exercise-17))
+
 (define (double x) (+ x x))
 
 (define (halve x)

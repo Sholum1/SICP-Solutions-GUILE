@@ -1,3 +1,6 @@
+(define-module (chapter-1 exercise-07)
+  #:export (square average))
+
 #|
    For smaller numbers, the problem with `good-enough?' is that the precision is
   fixed at is fixed to 0.001. So, for any number smaller than 0.001,

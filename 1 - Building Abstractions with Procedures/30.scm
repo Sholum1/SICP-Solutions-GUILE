@@ -1,3 +1,5 @@
+(define-module (chapter-1 exercise-30))
+
 (define (sum term a next b)
   (define (iter a result)
     (if (> a b)

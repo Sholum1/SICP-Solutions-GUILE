@@ -1,3 +1,5 @@
+(define-module (chapter-1 exercise-32))
+
 (define (accumulate-recur combiner null-value term a next b)
   (if (> a b)
       null-value

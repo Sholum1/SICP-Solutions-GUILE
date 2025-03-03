@@ -1,3 +1,5 @@
+(define-module (chapter-1 exercise-36))
+
 (define tolerance 0.00001)
 
 (define (fixed-point f first-guess)

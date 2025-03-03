@@ -1,4 +1,5 @@
-(define (square x) (* x x))
+(define-module (chapter-1 exercise-23)
+  #:use-module (chapter-1 exercise-22))
 
 (define (smallest-divisor n) (find-divisor n 2))
 
@@ -17,8 +18,6 @@
 (define (prime? n)
   (= n (smallest-divisor n)))
 
-(define (runtime) (get-internal-real-time))
-
 (define (timed-prime-test n)
   (newline)
   (display n)
@@ -28,11 +27,6 @@
   (if (prime? n)
       (report-prime (- (runtime) start-time))
       #f)) ;; slightly modified version, so there's no need to verify 2 times
-
-(define (report-prime elapsed-time)
-  (display " *** ")
-  (display elapsed-time)
-  (newline))
 
 #|
   (timed-prime-test 1009)     

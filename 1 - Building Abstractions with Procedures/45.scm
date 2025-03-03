@@ -1,38 +1,12 @@
-(define (compose f g)
-  (lambda (x) (f (g x))))
-
-(define (repeated f n)
-  (define (iter count acc)
-    (if (= count n)
-	acc
-	(iter (1+ count) (compose f acc))))
-  (iter 1 f))
-
-(define tolerance 0.00001)
-
-(define (fixed-point f first-guess)
-  (define (close-enough? v1 v2)
-    (< (abs (- v1 v2))
-       tolerance))
-  (define (try guess)
-    (let ((next (f guess)))
-      (if (close-enough? guess next)
-	  next
-	  (try next))))
-  (try first-guess))
-
-(define (average x y)
-  (/ (+ x y) 2))
+(define-module (chapter-1 exercise-45)
+  #:use-module ((chapter-1 exercise-07)
+		#:select (average))
+  #:use-module (chapter-1 exercise-16)
+  #:use-module (chapter-1 exercise-35)
+  #:use-module (chapter-1 exercise-43))
 
 (define (average-damp f)
   (lambda (x) (average x (f x))))
-
-(define (fast-expt b n)
-  (define (iter b n acc)
-    (cond ((= n 0) acc)
-	  ((even? n) (iter (* b b) (/ n 2) acc))
-	  (else (iter b (1- n) (* b acc)))))
-  (iter b n 1))
 
 (define (number-of-damps-per-nth-root x nth number-of-damps)
   (fixed-point

@@ -1,4 +1,6 @@
-(define (square x) (* x x))
+(define-module (chapter-1 exercise-08)
+  #:use-module ((chapter-1 exercise-07)
+		#:select (square)))
 
 (define (cube x) (* x x x))
 

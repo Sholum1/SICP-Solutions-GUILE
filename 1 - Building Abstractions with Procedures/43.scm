@@ -1,5 +1,6 @@
-(define (compose f g)
-  (lambda (x) (f (g x))))
+(define-module (chapter-1 exercise-43)
+  #:use-module (chapter-1 exercise-42)
+  #:export     (repeated))
 
 (define (repeated f n)
   (define (iter count acc)

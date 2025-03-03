@@ -1,4 +1,8 @@
-(define (square x) (* x x))
+(define-module (chapter-1 exercise-21)
+  #:use-module ((chapter-1 exercise-07)
+		#:select (square))
+  #:re-export (square)
+  #:export    (smallest-divisor find-divisor))
 
 (define (smallest-divisor n) (find-divisor n 2))
 

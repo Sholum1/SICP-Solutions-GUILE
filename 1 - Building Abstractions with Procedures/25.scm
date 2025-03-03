@@ -1,25 +1,6 @@
-(define (square x) (* x x))
-
-(define (expmod base exp m)
-  (cond ((= exp 0) 1)
-	((even? exp)
-	 (remainder
-	  (square (expmod base (/ exp 2) m))
-	  m))
-	(else
-	 (remainder
-	  (* base (expmod base (1- exp) m))
-	  m))))
-
-(define (fermat-test n)
-  (define (try-it a)
-    (= (expmod a n n) a))
-  (try-it (1+ (random (1- n)))))
-
-(define (fast-expt b n)
-  (cond ((= n 0) 1)
-	((even? n) (square (fast-expt b (/ n 2))))
-	(else (* b (fast-expt b (1- n))))))
+(define-module (chapter-1 exercise-25)
+  #:use-module (chapter-1 exercise-24)
+  #:use-module (chapter-1 exercise-16))
 
 (define (expmod-alyssa base exp m)
   (remainder (fast-expt base exp) m))

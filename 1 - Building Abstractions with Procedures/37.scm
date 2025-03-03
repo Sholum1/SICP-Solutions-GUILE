@@ -1,3 +1,7 @@
+(define-module (chapter-1 exercise-37)
+  #:use-module (ice-9 format)
+  #:export     ((cont-frac-iter . cont-frac)))
+
 (define (cont-frac-recur n d k)
   (define (recur i)
     (if (= i k)

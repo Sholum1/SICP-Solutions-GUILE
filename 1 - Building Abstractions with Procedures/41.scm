@@ -1,3 +1,5 @@
+(define-module (chapter-1 exercise-41))
+
 (define (double g)
   (lambda (x) (g (g x))))
 

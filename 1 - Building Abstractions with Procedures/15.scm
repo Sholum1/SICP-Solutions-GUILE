@@ -1,3 +1,5 @@
+(define-module (chapter-1 exercise-15))
+
 #|
   a)
   The procedure p is evaluated 5 times as showed in the tree below.

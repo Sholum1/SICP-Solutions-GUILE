@@ -1,6 +1,7 @@
-(define (not= x y) (not (= x y)))
+(define-module (chapter-1 exercise-28)
+  #:use-module (chapter-1 exercise-07))
 
-(define (square x) (* x x))
+(define (not= x y) (not (= x y)))
 
 (define (remainder-verified expm m)
   (define sqr (square expm))
