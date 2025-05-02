@@ -1,4 +1,5 @@
-(define-module (chapter-2 exercise-28))
+(define-module (chapter-2 exercise-28)
+  #:export (fringe))
 
 (define (fringe t)
   (define (recur t acc)
@@ -9,4 +10,3 @@
 			     (cons c acc))))
 	acc))
   (reverse (recur t '())))
-
