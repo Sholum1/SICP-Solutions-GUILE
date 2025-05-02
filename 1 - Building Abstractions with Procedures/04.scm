@@ -15,7 +15,7 @@
 
 
 #|
-  Examples:
-   - (a-plus-abs-b 2 3)  -> (+ 2 3)  -> 5
-   - (a-plus-abs-b 2 -3) -> (- 2 -3) -> 5
+   Examples:
+    - (a-plus-abs-b 2 3)  -> (+ 2 3)  -> 5
+    - (a-plus-abs-b 2 -3) -> (- 2 -3) -> 5
 |#

@@ -11,20 +11,20 @@
   (try-it (1+ (random (1- n)))))
 
 #|
-  Theoretically, Alyssa's version would work and obtain the same result, but 
-   in practice, the intermediate values of (fast-expt base exp) would get larger
-   and larger, depending on the language:
+   Theoretically, Alyssa's version would work and obtain the same result, but 
+  in practice, the intermediate values of (fast-expt base exp) would get larger
+  and larger, depending on the language:
 
     1. cause an overflow;
     2. promote to a bignum.
 
-  In the first case we would have computational errors, where 
-   (fast-expt base exp) would compute to negative values, and in the second case
-   we would have a loss of performance because promoting and working with bignum
-   is costly!
+   In the first case we would have computational errors, where 
+  (fast-expt base exp) would compute to negative values, and in the second case
+  we would have a loss of performance because promoting and working with bignum
+  is costly!
 
-  For example (Guile auto-promotes to bignum):
-   fermat-test:
+   For example (Guile auto-promotes to bignum):
+  fermat-test:
    * ,t (fermat-test 1009)
      > 0.002080s real time, 0.002074s run time.  0.000000s spent in GC.
 

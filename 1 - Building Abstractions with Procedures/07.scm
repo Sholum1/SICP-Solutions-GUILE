@@ -6,7 +6,7 @@
   fixed at is fixed to 0.001. So, for any number smaller than 0.001,
   the program will before getting a good result.
 
-  Example:
+   Example:
     - (sqrt 0.001)         -> 0.04124542607499115
     - (sqrt 0.00000000004) -> 0.03125000042625
 |#
@@ -20,7 +20,7 @@
   allowed by the machine, the numbers are represented as the same, and the
   `sqrt-iter' recursion will never end.
 
-  Example:
+   Example:
     - (sqrt 10000000000000) -> hangs
       -> Hangs on guess = 3162277.6601683795
       -> (improve 3162277.6601683795 10000000000000) -> 3162277.6601683795
@@ -51,7 +51,7 @@
   (sqrt-iter 1.0 x))
 
 #|
-  With this new versions of `good-enough?' we have:
+   With this new versions of `good-enough?' we have:
    - (sqrt 0.001)           -> 0.03162277660168433
    - (sqrt 0.00000000004)   -> 6.324555320336758e-6
    - (sqrt 10000000000000)  -> 3162277.6601683795

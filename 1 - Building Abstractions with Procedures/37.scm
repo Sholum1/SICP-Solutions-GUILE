@@ -19,8 +19,8 @@
 #|
   1/ϕ ~= 0.6180
 
-  I used the following recursion, which uses some concepts and procedures not
-   described in this book, to find the number of steps needed to find 0.6180:
+   I used the following recursion, which uses some concepts and procedures not
+  described in this book, to find the number of steps needed to find 0.6180:
 |#
 
 (define (number-of-steps)
@@ -40,6 +40,6 @@
      > 11
      > 0.6180555555555556
 
-  With k = 11 we get an good enough approximation that is accurate to 4 decimal
-   places of 1/ϕ
+   With k = 11 we get an good enough approximation that is accurate to 4 decimal
+  places of 1/ϕ
 |#

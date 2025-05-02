@@ -1,0 +1,12 @@
+(define-module (chapter-2 exercise-28))
+
+(define (fringe t)
+  (define (recur t acc)
+    (if (pair? t)
+	(let ([c (car t)])
+	  (recur (cdr t) (if (pair? c)
+			     (recur c acc)
+			     (cons c acc))))
+	acc))
+  (reverse (recur t '())))
+

@@ -1,8 +1,8 @@
 (define-module (chapter-1 Better-count-change))
 
 #|
-  In page 53:
-  Count-change generates a tree-recursive process with redundancies similar
+   In page 53:
+   Count-change generates a tree-recursive process with redundancies similar
   to those in our ﬁrst implementation of fib. (It will take quite a while
   for that 292 to be computed.) On the other hand, it is not obvious how
   to design a better algorithm for computing the result, and we leave this
@@ -49,29 +49,29 @@
 		     kinds-of-coins)))))
 
 #|
-  Comparison:
+   Comparison:
 
-  old-version: 
-  - ,time (old-count-change 100)
-    - 292
-    - 0.005475s real time, 0.005464s run time.  0.000000s spent in GC.
-  - ,time (old-count-change 1000)
-    - 801451
-    - 4.197104s real time, 4.217963s run time.  0.022299s spent in GC.
-  - ,time (old-count-change 1234)
-    - 1773850
-    - 11.488751s real time, 11.488282s run time.  0.000000s spent in GC.
-
-  new-version:
-  - ,time (count-change 100)
+   old-version:
+   - ,time (old-count-change 100)
      - 292
-     - 0.004491s real time, 0.004484s run time.  0.000000s spent in GC.
-
-  - ,time (count-change 1000)
-    - 801451
-    - 0.004802s real time, 0.004798s run time.  0.000000s spent in GC.
-
-  - ,time (count-change 1234)
+     - 0.005475s real time, 0.005464s run time.  0.000000s spent in GC.
+   - ,time (old-count-change 1000)
+     - 801451
+     - 4.197104s real time, 4.217963s run time.  0.022299s spent in GC.
+   - ,time (old-count-change 1234)
      - 1773850
-     - 0.009776s real time, 0.009498s run time.  0.000000s spent in GC.
+     - 11.488751s real time, 11.488282s run time.  0.000000s spent in GC.
+
+   new-version:
+   - ,time (count-change 100)
+      - 292
+      - 0.004491s real time, 0.004484s run time.  0.000000s spent in GC.
+
+   - ,time (count-change 1000)
+     - 801451
+     - 0.004802s real time, 0.004798s run time.  0.000000s spent in GC.
+
+   - ,time (count-change 1234)
+      - 1773850
+      - 0.009776s real time, 0.009498s run time.  0.000000s spent in GC.
 |#

@@ -20,13 +20,13 @@
 
 #|
   b)
-  Every iteration of (sine a) divide a by 3 if a is bigger than 0.1, so, the
-   iteration process stops when a/(3^n) < 0.1, implying that:
+   Every iteration of (sine a) divide a by 3 if a is bigger than 0.1, so, the
+  iteration process stops when a/(3^n) < 0.1, implying that:
      * 10a < 3^n
      * n > (log(a) + log(10))/log(3)
     Concluding that, for the number of steps, the order of growth of the
    sine procedure is Θ(log(a)).
-   As shown by the recursion tree of a), is necessary to maintain a stack 
-    of calls to the sine procedure. Therefore, the order of growth in space
-    is also Θ(log(a)), which is the depth of the recursion.
+    As shown by the recursion tree of a), is necessary to maintain a stack
+   of calls to the sine procedure. Therefore, the order of growth in space
+   is also Θ(log(a)), which is the depth of the recursion.
 |#

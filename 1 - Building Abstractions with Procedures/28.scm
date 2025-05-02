@@ -96,5 +96,5 @@
    	((miller-rabin-test n) (fast-prime? n (- times 1)))
    	(else #f)))
 
-;;  and pass a sufficiently large "times".
+;; and pass a sufficiently large "times".
 ;; Because for each additional run, the chance of the test failing is smaller.

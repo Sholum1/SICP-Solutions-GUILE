@@ -1,13 +1,14 @@
 (define-module (chapter-1 exercise-19))
 
 #|
-  * Tpq(a, b) = (bq + aq + ap, bp + aq)
-  * Tpq(Tpq(a, b)) = Tpq(bq + aq + ap, bp + aq) =
-  * ((bp + aq)q + (bq + aq + ap)q + (bq + aq + ap)p, (bp + aq)p + (bq + aq + ap)q) =
-  * (b(2pq + q²) + b(p² + q²) + a(2pq + q²), b(p² + q²) + a(2pq + q²))
+    * Tpq(a, b) = (bq + aq + ap, bp + aq)
+    * Tpq(Tpq(a, b)) = Tpq(bq + aq + ap, bp + aq) =
+    * ((bp + aq)q + (bq + aq + ap)q + (bq + aq + ap)p, (bp + aq)p + (bq + aq + ap)q) =
+    * (b(2pq + q²) + b(p² + q²) + a(2pq + q²), b(p² + q²) + a(2pq + q²))
 
-  * Tp'q'(a, b) = (bq' + aq' + ap', bp' + aq') = (b(2pq + q²) + b(p² + q²) + a(2pq + q²), b(p² + q²) + a(2pq + q²))
-  So q' = 2pq + q² and p' = p² + q²
+    * Tp'q'(a, b) = (bq' + aq' + ap', bp' + aq') = (b(2pq + q²) + b(p² + q²) + a(2pq + q²),
+      b(p² + q²) + a(2pq + q²))
+   So q' = 2pq + q² and p' = p² + q²
 |#
 
 (define (fib n)
