@@ -1,4 +1,5 @@
-(define-module (chapter-2 exercise-60))
+(define-module (chapter-2 exercise-60)
+  #:export (element-of-set?))
 
 ;; O(n): same implementation
 (define (element-of-set? x set)
