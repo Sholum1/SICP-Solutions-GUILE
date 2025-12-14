@@ -2,9 +2,11 @@
   #:export  (;; common
 	     deriv same-variable? =number?
 	     ;; sum
-	     make-sum sum? addend sugend
+	     make-sum sum? addend augend
 	     ;; product
-	     make-product product? multiplier multiplicand)
+	     make-product product? multiplier multiplicand
+	     ;; exponentation
+	     make-exponentiation exponentation? base exponent)
   #:replace (variable?))
 
 ;; Basic functions
