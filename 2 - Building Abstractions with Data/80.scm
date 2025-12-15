@@ -1,0 +1,11 @@
+(define-module (chapter-2 exercise-80))
+
+(define (=zero?-pkg)
+  (define (=zero-rational? x)
+    (and (zero? (number x))
+	 (not (zero? (denom x)))))
+  (define (=zero-complex? x)
+    (= (imag-part x) (real-part x) 0))
+  (put '=zero? '(scheme-number) zero?)
+  (put '=zero? '(rational)      =zero-rational?)
+  (put '=zero? '(complex)       =zero-complex?))
